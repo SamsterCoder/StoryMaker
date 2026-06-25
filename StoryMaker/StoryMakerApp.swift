@@ -28,5 +28,17 @@ struct StoryMakerApp: App {
             StartView()
                 .modelContainer(sharedModelContainer)
         }
+        .commands {
+            CommandGroup(replacing: .newItem) {
+                Button("Neues Storyboard") { /* ... */ }
+                Button("Storyboard laden") { }
+            }
+            CommandGroup(replacing: .appInfo) {
+                Button("Einstellungen") { /* ... */ }
+            }
+            CommandMenu("Storyboards") {
+                Button("Importieren") { /* ... */ }
+            }
+        }
     }
 }
