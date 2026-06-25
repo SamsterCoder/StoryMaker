@@ -25,8 +25,8 @@ struct StoryMakerApp: App {
 
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            StartView()
+                .modelContainer(sharedModelContainer)
         }
-        .modelContainer(sharedModelContainer)
     }
 }
