@@ -16,7 +16,8 @@ struct StartView: View {
                     .font(.largeTitle).bold()
 
                 NavigationLink("Neues Storyboard") {
-                    ContentView() // deine bestehende Liste/Detail-Navigation
+                     CreateFile() 
+                    
                 }
                 
                 NavigationLink("Storyboards") {
